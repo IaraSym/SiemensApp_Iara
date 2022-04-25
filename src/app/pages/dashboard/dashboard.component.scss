@@ -1,0 +1,43 @@
+
+
+.content_dashboard{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 0 0 32px 0;
+}
+
+.avatar {
+      max-width: 100%;
+  }
+  
+  .name{     
+    margin: 24px 0 0 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #1b1534;
+    display: block;
+  }
+
+   .designation{
+    margin: 24px 0 0 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #414044;
+    display: block;
+   }
+   
+   .job {
+    margin: 24px 0 0 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #1b1534;
+    display: block;
+
+   }
