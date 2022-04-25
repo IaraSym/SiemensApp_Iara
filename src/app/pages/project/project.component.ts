@@ -42,6 +42,7 @@ export class ProjectComponent {
   }
 }
 
+
 class ExampleDataSource extends DataSource<PeriodicElement> {
   private _dataStream = new ReplaySubject<PeriodicElement[]>();
 
