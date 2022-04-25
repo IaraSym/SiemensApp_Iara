@@ -5,6 +5,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { InfoComponent } from './pages/info/info.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProjectComponent } from './pages/project/project.component';
+
+
+
 
 const routes: Routes = [
 
@@ -20,7 +24,11 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-  },
+  },    
+  {
+    path: 'project',
+    component: ProjectComponent,
+  },  
   {
     path: 'info',
     component: InfoComponent,

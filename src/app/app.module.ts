@@ -17,6 +17,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { InfoComponent } from './pages/info/info.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProjectComponent } from './pages/project/project.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     DashboardComponent, 
     HomepageComponent, 
     InfoComponent, 
-    NotFoundComponent, ],
+    NotFoundComponent, ProjectComponent, ],
   imports: [
     BrowserModule,
     AppRoutingModule,
