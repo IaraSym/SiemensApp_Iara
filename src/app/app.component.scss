@@ -1,69 +1,80 @@
-mat-toolbar {
-    background-image: linear-gradient( to right, #8a00e5, #4d217a, #1b1534 );
-    color: white;
-  }
-  
-  mat-sidenav {
-    margin: 16px;
-    width: 200px;
-    border-right: none;
-    background-image: linear-gradient( to bottom, #8a00e5, #4d217a, #1b1534 );
-    
-    color: white;
-    border-radius: 10px;
-    padding: 16px;
-    text-align: center;
-  }
-  
-  .content {
-    height: calc(100vh - 130px);
-    border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;
 
+
+mat-toolbar {
+  background-image: linear-gradient( to right, #8a00e5, #4d217a, #1b1534 );
+  color: white;
+  padding: 0 0 0 16px;
+  justify-content: space-between;
+}
+
+
+.header__logo__company {
+  width: 100px;
+  padding: 0 32px 0 0;
+  color: #FFFF;
+}
+
+mat-sidenav {
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background-image: linear-gradient( to bottom, #8a00e5, #4d217a, #1b1534 );
   
-    padding: 16px;
-  
-    overflow: auto;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.content {
+  height: calc(100vh - 130px);
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+
+
+  padding: 16px;
+
+  overflow: auto;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+
+  mat-icon {
+    margin-right: 8px;
   }
-  
-  mat-sidenav-container {
-    height: calc(100vh - 65px);
-  }
-  
-  .menu-button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1rem;
-  
-    mat-icon {
-      margin-right: 8px;
-    }
-  }
-  
-  .avatar {
-    margin-top: 16px;
-    max-width: 100%;
-    border-radius: 50%;
-  }
-  
-  .name {
-    margin: 8px 0 0 0;
-    font-weight: 700;
-    letter-spacing: 3px;
-    font-size: 20px;
-  }
-  
-  .designation {
-    margin: 8px 0 0 0;
-    font-size: 14px;
-    color: lightgrey;
-  }
-  
-  mat-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+}
+
+.avatar {
+  margin-top: 16px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.name {
+  margin: 8px 0 0 0;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.designation {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: lightgrey;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
