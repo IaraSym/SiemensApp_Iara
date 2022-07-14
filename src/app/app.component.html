@@ -1,0 +1,48 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+      <img class="header__logo__company" src="/assets/Siemens_Energy_logo_white.svg" alt="Logo: Siemens Energy">
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img src="/assets/BawiStudent.jpeg" class="avatar mat-elevation-z8">
+
+    <h4 class="name">Bawi Antunes</h4>
+    <p class="designation">Interior Designer Junior</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/homepage">
+      <mat-icon>home</mat-icon>
+      <span>Homepage</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/dashboard">
+      <mat-icon>person</mat-icon>
+      <span>Dashboard</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/project">
+      <mat-icon>work icon</mat-icon>
+      <span>Projects</span>
+    </button>   
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/info">
+      <mat-icon>info</mat-icon>
+      <span>Info</span> 
+    </button>
+
+    
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
